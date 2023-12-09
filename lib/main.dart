@@ -1,3 +1,5 @@
+import 'package:e_learning_ui/screens/login_screens/login_screen_one.dart';
+import 'package:e_learning_ui/screens/register_screens/register_screen_one.dart';
 import 'package:e_learning_ui/screens/screen_one.dart';
 import 'package:e_learning_ui/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
@@ -22,6 +24,8 @@ class _MyAppState extends State<MyApp> {
       routes: {
         "splash_screen": (context) => const SplashScreen(),
         "screen_one": (context) => const ScreenOne(),
+        "login_screen_one": (context) => const LoginScreenOne(),
+        "register_screen_one": (context) => const RegisterScreenOne(),
       },
     );
   }

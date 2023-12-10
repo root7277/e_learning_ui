@@ -84,26 +84,15 @@ class _LoginScreenOneState extends State<LoginScreenOne> {
             ),
           ),
           const SizedBox(height: 63),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              const Text('Doesn’t have account?', style: TextStyle(fontSize: 14, fontWeight: FontWeight.w400, color: Color.fromRGBO(60, 60, 67, 0.60))),
-              const SizedBox(width: 10),
-              TextButton(
+          Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+            const Text('Doesn’t have account?', style: TextStyle(fontSize: 14, fontWeight: FontWeight.w400, color: Color.fromRGBO(60, 60, 67, 0.60))),
+            const SizedBox(width: 10),
+            TextButton(
                 onPressed: () {
                   Navigator.pushNamed(context, 'register_screen_one');
                 },
-                child: const Text(
-                  'Register',
-                  style: TextStyle(
-                    fontSize: 14,
-                    fontWeight: FontWeight.w400,
-                    color: Color(0xFF3DB2FF),
-                  ),
-                ),
-              ),
-            ],
-          )
+                child: const Text('Register', style: TextStyle(fontSize: 14, fontWeight: FontWeight.w400, color: Color(0xFF3DB2FF))))
+          ])
         ],
       ),
     );

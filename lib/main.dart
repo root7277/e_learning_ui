@@ -1,3 +1,4 @@
+import 'package:e_learning_ui/home_screen.dart';
 import 'package:e_learning_ui/screens/login_screens/login_screen_one.dart';
 import 'package:e_learning_ui/screens/register_screens/register_screen_email.dart';
 import 'package:e_learning_ui/screens/register_screens/register_screen_name.dart';
@@ -34,6 +35,7 @@ class _MyAppState extends State<MyApp> {
         "register_screen_name": (context) => const RegisterScreenName(),
         "register_screen_email": (context) => const RegisterScreenEmail(),
         "register_screen_password": (context) => const RegisterScreenPassword(),
+        "home_screen": (context) => const HomeScreen(),
       },
     );
   }

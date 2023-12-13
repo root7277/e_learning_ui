@@ -24,7 +24,7 @@ class _RegisterScreenTwoState extends State<RegisterScreenPassword> {
           const SizedBox(height: 35),
           Padding(
             padding: const EdgeInsets.only(left: 25),
-            child: InkWell(child: Container(width: 327, height: 58, decoration: const BoxDecoration(borderRadius: BorderRadius.all(Radius.circular(40)), color: Color(0xFF0693F1)), child: const Center(child: Text('Start', style: TextStyle(fontSize: 18, fontWeight: FontWeight.w400, color: Colors.white))))),
+            child: InkWell(onTap: () => Navigator.pushNamed(context, "home_screen"), child: Container(width: 327, height: 58, decoration: const BoxDecoration(borderRadius: BorderRadius.all(Radius.circular(40)), color: Color(0xFF0693F1)), child: const Center(child: Text('Start', style: TextStyle(fontSize: 18, fontWeight: FontWeight.w400, color: Colors.white))))),
           ),
         ],
       ),
